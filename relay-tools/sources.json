@@ -1,0 +1,35 @@
+{
+  "siteUrl": "https://adr1an-ma1na.github.io/sahrae-weather-app/",
+  "static": [
+    {
+      "url": "https://www.cpc.ncep.noaa.gov/data/indices/oni.ascii.txt",
+      "file": "cpc/oni.ascii.txt"
+    },
+    {
+      "url": "https://www.cpc.ncep.noaa.gov/data/indices/wksst9120.for",
+      "file": "cpc/wksst9120.for"
+    },
+    {
+      "url": "https://www.cpc.ncep.noaa.gov/products/analysis_monitoring/enso_advisory/ensodisc.shtml",
+      "file": "cpc/ensodisc.shtml"
+    },
+    {
+      "url": "https://psl.noaa.gov/gcos_wgsp/Timeseries/Data/dmi.had.long.data",
+      "file": "psl/dmi.had.long.data"
+    },
+    {
+      "url": "https://psl.noaa.gov/mjo/mjoindex/romi.cpcolr.1x.txt",
+      "file": "psl/romi.cpcolr.1x.txt"
+    },
+    {
+      "url": "https://www.nhc.noaa.gov/CurrentStorms.json",
+      "file": "nhc/CurrentStorms.json"
+    }
+  ],
+  "ozoneKinds": [
+    "to3areas",
+    "to3mins",
+    "omds"
+  ],
+  "metarFile": "awc/metars.json"
+}

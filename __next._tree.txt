@@ -1,0 +1,5 @@
+:HL["/sahrae-weather-app/_next/static/chunks/0s2p_7j-81lym.css","style"]
+:HL["/sahrae-weather-app/_next/static/media/1b99372b3eaef0c8-s.p.1gsd1jahc5dg_.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/sahrae-weather-app/_next/static/media/f7aa21714c1c53f8-s.p.0-95eo-012xnf.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+1:[["children",{"s":"__PAGE__","h":160}]]
+0:{"b":"yHn0oTeAGG2V7t-xa_iun","t":{"t":{"s":"","h":80,"c":"$Q1"}}}

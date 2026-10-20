@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Offline · Sahrae Weather</title>
+    <style>
+      /* Sahrae Weather themes (Storm / Cirrus / Monsoon), same choice as the app. */
+      :root, .storm { --bg: #070b11; --panel: #0e151d; --line: #1f2d3a; --text: #eaf2f8; --muted: #96a8bb; --accent: #45d3e6; --ink: #032229; }
+      .cirrus { --bg: #eef4f9; --panel: #f8fbfd; --line: #d3dfe9; --text: #0c1a27; --muted: #46596e; --accent: #0a66b5; --ink: #fff; }
+      .monsoon { --bg: #e7f5ef; --panel: #eff9f4; --line: #c2e0d2; --text: #0b2219; --muted: #3b5a4c; --accent: #0a7354; --ink: #fff; }
+      html, body { margin: 0; background: var(--bg); color: var(--text); font: 15px/1.5 Figtree, system-ui, sans-serif; }
+      main { max-width: 440px; margin: 12vh auto; padding: 0 16px; }
+      .card { background: var(--panel); border: 1px solid var(--line); border-radius: 14px; padding: 24px; }
+      h1 { font-size: 20px; margin: 12px 0 6px; }
+      p { color: var(--muted); margin: 6px 0; }
+      button { margin-top: 14px; background: var(--accent); color: var(--ink); border: 0; border-radius: 10px; padding: 9px 16px; font-weight: 600; cursor: pointer; }
+    </style>
+    <script>
+      try { var t = localStorage.getItem("sw.theme"); if (["storm", "cirrus", "monsoon"].indexOf(t) < 0) t = matchMedia("(prefers-color-scheme: light)").matches ? "cirrus" : "storm"; document.documentElement.className = t; } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <svg width="40" height="40" viewBox="0 0 32 32" aria-hidden="true">
+          <g fill="var(--accent)"><circle cx="11" cy="15" r="5" /><circle cx="18" cy="11.5" r="6.5" /><circle cx="24" cy="15.5" r="4.5" /><rect x="6.5" y="13.5" width="21" height="7" rx="3.5" /></g>
+          <g stroke="var(--accent)" stroke-width="2.3" stroke-linecap="round"><line x1="5" y1="24.5" x2="21" y2="24.5" /><line x1="11" y1="28.5" x2="27" y2="28.5" /></g>
+        </svg>
+        <h1>You're offline</h1>
+        <p>This page hasn't been saved on this device yet. Pages and data you opened while online are available offline, each still labelled with the time it was fetched.</p>
+        <p>Weather changes quickly, so don't rely on offline data for safety decisions. Follow your national meteorological service.</p>
+        <button onclick="location.reload()">Try again</button>
+      </div>
+    </main>
+  </body>
+</html>

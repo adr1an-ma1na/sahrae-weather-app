@@ -1,0 +1,4 @@
+:HL["/sahrae-weather-app/_next/static/chunks/0s2p_7j-81lym.css","style"]
+2:[["children",{"s":"__PAGE__","h":160}]]
+1:[["children",{"s":"/_not-found","h":96,"c":"$Q2"}]]
+0:{"b":"yHn0oTeAGG2V7t-xa_iun","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
